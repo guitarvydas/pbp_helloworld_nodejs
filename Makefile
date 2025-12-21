@@ -1,7 +1,10 @@
-NAME=???
+# This is very rudimentary and should be rewritten.
+NAME=helloworld
+
 all:
 	node ./pbp/das/das2json.mjs $(NAME).drawio
-	python3 main.py . 'initial arg text here' main $(NAME).drawio.json
+	cat pbp/kernel/kernel0d.js hello.js world.js main.js >helloworld.mjs
+	node helloworld.mjs '.' '' main $(NAME).drawio.json
 
 init:
 	npm install yargs prompt-sync ohm-js @xmldom/xmldom
