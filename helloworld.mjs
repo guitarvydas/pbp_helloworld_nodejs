@@ -1108,7 +1108,7 @@ function shell_out_handler (eh,cmd,mev) {              /* line 26 */
     }                                                  /* line 38 *//* line 39 */
 }
 function hello_handler (eh,msg) {
-    send (eh, "", "hello", msg);
+    send (eh, "", "Hello", msg);
 }
 
 function hello_instantiator (reg,owner,name,template_data) {
@@ -1121,7 +1121,7 @@ function hello_install (reg) {
 }
 
 function world_handler (eh,msg) {
-    send (eh, "", "world", msg);
+    send (eh, "", "World", msg);
 }
 
 function world_instantiator (reg,owner,name,template_data) {

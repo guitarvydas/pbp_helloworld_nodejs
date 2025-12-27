@@ -1,5 +1,5 @@
 function world_handler (eh,msg) {
-    send (eh, "", "world", msg);
+    send (eh, "", "World", msg);
 }
 
 function world_instantiator (reg,owner,name,template_data) {

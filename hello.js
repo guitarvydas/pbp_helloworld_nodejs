@@ -1,5 +1,5 @@
 function hello_handler (eh,msg) {
-    send (eh, "", "hello", msg);
+    send (eh, "", "Hello", msg);
 }
 
 function hello_instantiator (reg,owner,name,template_data) {
